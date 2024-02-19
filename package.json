@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A simple node.js app",
   "main": "server.js",
-  "scripts": {
+  "scripts": { 
+    "build": "esbuild src/server.js --bundle --outfile=dist/bundle.js --format=esm",
     "start": "node server.js",
     "test": "mocha tests/test.js"
   },
